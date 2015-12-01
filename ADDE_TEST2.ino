@@ -225,7 +225,7 @@ void loop() {
     start_motor = 0;
   }
 
-  if (delta_KD < 950 || delta_WH > 150 || delta_WH < 100 ) { //если значение таймера  больше "" или  больше ""
+  if (delta_KD < 950 || delta_WH < 150 || delta_WH > 100 ) { //если значение таймера  больше "" или  больше ""
     motor_spd = 1924;//то пишем в порт мотора @@ скорость.
 //    motor.write(motor_spd);
     start_motor = 15;
